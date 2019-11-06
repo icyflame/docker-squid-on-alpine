@@ -1,0 +1,7 @@
+version: '2.1'
+
+services:
+  squid:
+    build: './squid'
+    ports:
+      - "3128:3128"

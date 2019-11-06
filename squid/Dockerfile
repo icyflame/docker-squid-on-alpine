@@ -1,0 +1,4 @@
+FROM alpine:latest
+RUN apk add squid
+COPY squid.conf /etc/squid/squid.conf
+ENTRYPOINT ["squid", "-NYCd", "1", "-f", "/etc/squid/squid.conf"]
